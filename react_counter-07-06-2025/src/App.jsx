@@ -16,11 +16,14 @@ function App() {
     if(counter >= 20) {
       return;
     }
-    setCounter(counter + 1)
+    setCounter(preCounter => preCounter + 1)
+    setCounter(preCounter => preCounter + 1)
+    setCounter(preCounter => preCounter + 1)
+    setCounter(preCounter => preCounter + 1)
   }
   
 
-  const removeCounter = () => {
+const removeCounter = () => {
     if (counter <= 0) {
       return;
     }
